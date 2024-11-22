@@ -1,0 +1,21 @@
+@import '~/shared/styles/iconButton';
+
+.header {
+  margin-bottom: 5px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: max-content 1fr max-content
+}
+
+.headline {
+  justify-self: center;
+  grid-column: 2/3
+}
+
+.signOutButton {
+  grid-column: 3/4
+}
+
+.button {
+  @include iconButton(var(--color-text), var(--color-primary));
+}

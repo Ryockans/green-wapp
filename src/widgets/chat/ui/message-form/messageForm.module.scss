@@ -1,0 +1,22 @@
+@import '~/shared/styles/iconButton';
+
+.form {
+  width: 100%;
+  gap: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.sendButton {
+  @include iconButton(var(--color-text), var(--color-primary));
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.input {
+  width: 100%;
+}
+

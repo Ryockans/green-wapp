@@ -1,0 +1,17 @@
+@mixin iconButton($color, $hoverColor) {
+  --button-color: $color;
+
+  color: $color;
+  background: none;
+  border: none;
+  outline: none;
+
+  &:hover {
+    color: $hoverColor;
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
