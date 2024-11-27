@@ -1,0 +1,49 @@
+.wrapper {
+  display: grid;
+  row-gap: 4px;
+  justify-content: end;
+
+  &:global(.-user) {
+    justify-content: start;
+
+
+    & .date {
+      justify-self: start;
+    }
+    & .message {
+      justify-self: start;
+      background-color: var(--color-primary);
+
+    }
+  }
+}
+
+.message {
+  max-width: 420px;
+  display: grid;
+  row-gap: 8px;
+  width: max-content;
+  word-wrap: break-word;
+  padding: 12px;
+  background-color: var(--color-accent);
+  border-radius: var(--border-radius-x-large);
+  justify-self: end;
+  white-space: pre-line;
+
+  @media (max-width: 560px) {
+    max-width: 330px;
+  }
+}
+
+.senderName {
+  font-size: 0.875rem;
+}
+
+.messageText {
+  font-size: 1rem;
+}
+
+.date {
+  font-size: 0.75rem;
+  font-weight: 500;
+}

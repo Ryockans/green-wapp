@@ -1,0 +1,18 @@
+.container {
+  padding: 0 5px;
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+  height: 100vh;
+}
+
+.formWrapper {
+  margin-bottom: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--color-accent);
+  width: 100%;
+}
+
+
+.messageScreen {
+  overflow: auto;
+}
